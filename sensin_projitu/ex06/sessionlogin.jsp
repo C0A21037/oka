@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>テスト</title>
     </head>      
-<body>
+<body bgcolor="#000000" text="#ff0000" alink="#1e90ff" vlink="#8a2be2">
 <h1 align="center">オカルトサイト</h1>
 <p align="center">ログインしてください</p>
 

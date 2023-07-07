@@ -6,7 +6,8 @@
         <title>テスト</title>
     </head>      
 <body bgcolor="#000000" text="#ff0000" alink="#1e90ff" vlink="#8a2be2">
-<h1 align="center">オカルトサイト</h1>
+<span style="font-family: NemukeMedium">
+<h1 align="center">オカルトマップ</span></h1>
 <p align="center">ログインしてください</p>
 
 <form action= "./LoginSessionServlet" method="post">
@@ -15,5 +16,6 @@
 <p align="center"><input type="submit" value="認証"></p>
 <p align="center"><a href="newuser.jsp" type="submit" >新規登録</a></p>
 </form>
+</span>
 </body>
 </html>

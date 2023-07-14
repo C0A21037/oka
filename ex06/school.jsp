@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style2.css">
     </head>
     
-    <body class="home sh">
+    <body class="home sh" bgcolor="#000000" text="#ff0000" alink="#1e90ff" vlink="#8a2be2">
     
     <header>
         <div class="header-inner inner">

@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+header {
+    background-color: #00fffa;
+	display: flex;					
+	justify-content: space-between;	
+	align-items: center;			
+	flex: 0 0 auto;
+	height: 100px;					
+	padding: 20px;					
+}
+
+iframe {width: 100%;}
+
+main {
+	display: block;			
+	margin: 50px 3% 100px;	
+}
+
+main h2 {
+	border-bottom: 4px solid #eee;	
+}
+
+
+main h2 span.uline {
+	display: inline-block;
+	border-bottom: 4px solid #0099ff;	 
+	position: relative;
+	bottom: -4px;		
+	padding: 0 20px;	
+}
+
+
+main h3 {
+	border-bottom: 4px solid #eee;	
+	padding: 20px 20px 0px;			
+}
+
+main p {
+	margin: 0 20px 30px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* メニューを横並びにする */
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul ul {
+  display: block;
+}
+
+/* liを下層メニューのulや矢印の基点にする */
+nav ul li {
+  position: relative;
+}
+
+/* ２階層目を持つliに矢印を設定する */
+nav ul li.parent::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(135deg);
+}
+
+/* ３階層目を持つliに矢印を設定する */
+
+nav ul ul li.parent::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+nav ul ul ul li.parent::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+/* ２・３階層目 共通設定 */
+nav li.parent ul {
+  /* 位置指定 */
+  position: absolute;
+  left: 0;
+  top: 64px;
+  z-index: 4;
+  /* デザイン指定 */
+  background-color: #28bfe7;
+  width: 180px;
+  /* 最初は非表示にする */
+  visibility: hidden;
+  opacity: 0;
+  /* アニメーション */
+  transition: all 0.3s;
+}
+
+nav ul li a {
+  display: block;
+  color: #999;
+  padding: 20px 35px;
+  transition: all 0.3s; /* アニメーションの動きの速度 */
+}
+
+nav ul li li a {
+  padding: 10px 35px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* hoverしたら表示する */
+nav li.parent:hover > ul,
+nav li.parent ul li:hover > ul,
+nav li.parent:active > ul,
+nav li.parent ul li:active > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav li.parent ul li a {
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+}
+
+nav li.parent ul li:last-child > a {
+  border-bottom: none;
+}
+
+nav li.parent ul li a:hover,
+nav li.parent ul li a:active {
+  background-color: #3577ca;
+}
+
+/* ３階層目の位置 */
+nav li.parent ul ul {
+  top: 0;
+  left: 182px;
+  background-color: #66adf5;
+}
+
+nav li.parent ul ul li a:hover,
+nav li.parent ul ul li a:active {
+  background-color: #448ed3;
+}

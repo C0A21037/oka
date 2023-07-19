@@ -50,7 +50,7 @@
     <p>1997年（平成9年）に閉鎖され廃墟となった。</p>
 
     <form>
-        <p align="center"><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
+        <p><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
     </form>
     </main>
     </div>

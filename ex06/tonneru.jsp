@@ -52,7 +52,7 @@
     <p>焼死体は、火に包まれながら倒れていた場所まで走った形跡があるため、現場で焼死したものとみられ、死後数時間程度と推定された。また、火を付ける前の暴行だけでなく焼死した後にも石で3度殴られていた。悲惨な事件である。</p>
 
     <form>
-        <p align="center"><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
+        <p><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
     </form>
     </main>
     </div>

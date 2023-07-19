@@ -50,7 +50,7 @@
     <p>あまり人が訪れない荒廃した廃墟という存在そのものに成仏できていない霊が集まり、心霊現象を呼び寄せているのかもしれない。</p>
     
     <form>
-        <p align="center"><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
+        <p><a href="okaltmap.jsp" type="submit" >マップページへ</a></p>
     </form>
     </main>
     </div>

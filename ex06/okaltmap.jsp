@@ -157,7 +157,8 @@
             </ul>
         </li>
 
-        <li><a href=”#”>掲示板</a></li>
+        <li><a href=review.jsp>掲示板</a></li>
+
         <li><a href=”#”>ログアウト</a></li>
         </ul>
     </nav>
